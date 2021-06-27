@@ -29,5 +29,5 @@ document.getElementById("welcome").innerHTML = "Welcome : " + getName;
 
 function logout(){
 localStorage.removeItem("User");
-window.location = "sign_up.html";
+window.location = "index.html";
 }

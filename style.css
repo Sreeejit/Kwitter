@@ -28,10 +28,7 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 	width: 80px;margin-top: 30px;border-radius: 40px;
 }
 
-#login_button
-{
-	width: 80%;border-radius: 15px;
-}
+
 
 .room_name
 {
@@ -126,3 +123,20 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
   .topnav .icon {
 	display: none;
   }
+
+  #sign_upINPUT{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width: 450px;	
+  }
+
+  #loginINPUT{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 450px;	
+	  }
+	
+
+
+
+
+
+
