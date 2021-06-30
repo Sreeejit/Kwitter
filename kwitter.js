@@ -17,7 +17,12 @@ document.getElementById("loginINPUT").value;
 
 function signup(){
 var UserName = document.getElementById("sign_upINPUT").value;
-localStorage.setItem("User", UserName);
+ localStorage.setItem("User", UserName)
+ console.log(UserName);
+firebase.database().ref("/").child(UserName).update({
+  Username : "OKAY"
+  })
+
 window.alert("You have successfully signed up to Kwitter you will be redirected to the Social page");
 window.location = "kwitter_room.html";
 }

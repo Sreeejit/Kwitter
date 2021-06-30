@@ -14,20 +14,31 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
-       Room_names = childKey;
-      //Start code
-
-      //End code
-      });});}
+    function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
+      Room_names = childKey;
+     //Start code
+   row = "<div class ='Room_names'>"+Room_names+"onclick = ToRoomName(this.id)"+Room_names+"</div><hr>";
+   document.getElementById("output").innerHTML += row;
+     //End code
+     });});}
 getData();
 
 function getName(){
-var getName = localStorage.getItem("User");
-document.getElementById("welcome").innerHTML = "Welcome : " + getName;
+var getName1 = localStorage.getItem("User");
+document.getElementById("welcome").innerHTML = "Welcome : " + getName1;
 }
 
 function logout(){
 localStorage.removeItem("User");
 window.location = "index.html";
+}
+
+
+function addRoom(){
+room_name = document.getElementById("addRoomINPUT").value;
+firebase.database().ref("/").child(room_name).update({
+ purpose : "adding room name"
+ })
+ localStorage.setItem("Room Name : ", room_name);
+ window.location = "room_page.html"
 }

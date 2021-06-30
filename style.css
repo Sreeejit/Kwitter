@@ -133,7 +133,21 @@ width: 450px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	width: 450px;	
 	  }
-	
+
+#sign_upbutton{
+width: 250px;
+background-color: #04AA6D;
+color: #333;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	  }
+
+#login_button{
+		width: 250px;
+		background-color: #04AA6D;
+		color: #333;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			  }
+		
 
 
 
