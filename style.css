@@ -28,7 +28,10 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 	width: 80px;margin-top: 30px;border-radius: 40px;
 }
 
-
+#login_button
+{
+	width: 80%;border-radius: 15px;
+}
 
 .room_name
 {
@@ -124,33 +127,8 @@ background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73
 	display: none;
   }
 
-  #sign_upINPUT{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-width: 450px;	
+  #MessageInput{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	width: 750px;
+	height: 100px;
   }
-
-  #loginINPUT{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	width: 450px;	
-	  }
-
-#sign_upbutton{
-width: 250px;
-background-color: #04AA6D;
-color: #333;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	  }
-
-#login_button{
-		width: 250px;
-		background-color: #04AA6D;
-		color: #333;
-		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-			  }
-		
-
-
-
-
-
-
